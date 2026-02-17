@@ -18,8 +18,7 @@ func TestGetAPIKey(t *testing.T) {
 		return
 	}
 
-	//Break intentionally
-	if key != apiKey || true {
+	if key != apiKey {
 		t.Errorf("Keys do not match")
 	}
 }
